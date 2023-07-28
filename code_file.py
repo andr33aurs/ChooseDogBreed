@@ -4,6 +4,7 @@ import pandas as pd
 from colorama import Fore, Back, Style, init
 import cairn_terrier
 import json
+import my_
 
 group = PrettyTable()
 breeds = PrettyTable()
@@ -80,6 +81,7 @@ def starting():
         )
 
 
+
 def chosen_breed():
     print("Now that you have seen how many dog breeds are included in the 3rd Group,"
           "Please be free to explore the characteristics of each breed. \n"
@@ -90,13 +92,12 @@ def chosen_breed():
 
     if breed_desired == "5":
         print(cairn_terrier.description())
-        caracter = int(input("If you want to know more about this breed, feel free to explore and get the knowledge "
+        choose_character()
+        character = int(input("If you want to know more about this breed, feel free to explore and get the knowledge "
                              "that interests you by typing its number:"))
-        caracteristics = {1: "personality", 2: "grooming", 3: "living conditions", 4: "training", 5: "usefulness"}
+        characteristics = {1: "personality", 2: "grooming", 3: "living conditions", 4: "training", 5: "usefulness"}
 
-        if caracter == caracteristics.keys():
-            if caracteristics.values() == cairn_terrier.grooming():
+        if character == characteristics.keys():
+            if characteristics.values() == cairn_terrier.grooming():
                 print(cairn_terrier.grooming())
-            # with open("cairn.json", "r") as f:
-            #     cairn = json.loads(f)
-            # print(cairn)
+
