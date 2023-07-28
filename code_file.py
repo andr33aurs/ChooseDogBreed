@@ -4,7 +4,6 @@ import pandas as pd
 from colorama import Fore, Back, Style, init
 import cairn_terrier
 import json
-import my_
 
 group = PrettyTable()
 breeds = PrettyTable()
@@ -81,23 +80,60 @@ def starting():
         )
 
 
+breed_options = {
+    1: "Airedale Terrier",
+    2: "American Staffordshire Terrier",
+    3: "Australian Terrier",
+    4: "Australian Silky Terrier",
+    5: "Cairn Terrier",
+    6: "West Highland White Terrier",
+    7: "Norfolk Terrier",
+    8: "Norwich Terrier",
+    9: "Scottish Terrier",
+    10: "Scottish Sky Terrier"
+}
+
+about_breed = {
+    1: "Description",
+    2: "Personality",
+    3: "Grooming",
+    4: "Living situation",
+    5: "Training",
+    6: "Usefulness"
+}
+
 
 def chosen_breed():
     print("Now that you have seen how many dog breeds are included in the 3rd Group,"
           "Please be free to explore the characteristics of each breed. \n"
           "These information will help you choose the most suitable companion for you and your family.")
-    breed_desired = input("In order to do that, please choose the number corresponding to the dog breed you want to "
-                          "know: ")
-    print()
+    breed_nr = int(input("In order to do that, please choose the number corresponding to the dog breed you want to "
+                         "know: "))
 
-    if breed_desired == "5":
-        print(cairn_terrier.description())
-        choose_character()
-        character = int(input("If you want to know more about this breed, feel free to explore and get the knowledge "
-                             "that interests you by typing its number:"))
-        characteristics = {1: "personality", 2: "grooming", 3: "living conditions", 4: "training", 5: "usefulness"}
+    if breed_nr in breed_options:
+        print(breed_options[breed_nr])
 
-        if character == characteristics.keys():
-            if characteristics.values() == cairn_terrier.grooming():
-                print(cairn_terrier.grooming())
+        # breed_file, breed_function = breed_options[breed_nr]
+        # function_to_call = getattr(breed_file, breed_function)
+        # function_to_call()
+    # if breed_nr == 5:
+    #     characteristics()
 
+
+def characteristics():
+    choice = int(input("If you want to know more about this breed, feel free to explore and get the knowledge"
+                       " that interests you by typing its number: "))
+    if choice in about_breed:
+        print(about_breed[choice])
+
+    # if choice == 1:
+    #     print("")
+    #     print(cairn_terrier.personality())
+    # elif choice == 2:
+    #     print(cairn_terrier.grooming())
+    # elif choice == 3:
+    #     print(cairn_terrier.living_conditions())
+    # elif choice == 4:
+    #     print(cairn_terrier.training())
+    # elif choice == 5:
+    #     print(cairn_terrier.usefulness())

@@ -30,11 +30,13 @@ def living_conditions():
 
 def training():
     return ("This dog is relatively easy to train because it is intelligent, likes to learn and to work. \n"
-            "It needs a rigorous, firm, consistent training done in a gentle and calm voice and it shouldn't be let to do what it wants. \n"
+            "It needs a rigorous, firm, consistent training done in a gentle and calm voice and it shouldn't be let "
+            "to do what it wants. \n"
             "It should be socialized from an early age with other household animals and other dogs. \n"
             "It likes exercise and running in open spaces. It must be taught to come to its master when called, "
             "because of its hunting instincts that can make it run away.")
 
 
 def usefulness():
-    return "It is a very good hunter of rodents and small wild animals. It is a perfect companion for a sportive family."
+    return "It is a very good hunter of rodents and small wild animals. It is a perfect companion for a sportive " \
+           "family."
