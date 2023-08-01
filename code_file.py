@@ -45,9 +45,17 @@ def show_breeds_in_groups():
     # for characteristic_key, characteristic_value in breed_characteristics.items():
     #     print(f"{characteristic_key}: {characteristic_value['name']}")
     print(Fore.CYAN)
+
     generate_prompt_table(["Characteristic Number", "Characteristic"], breed_characteristics)
     print(Style.RESET_ALL)
-    characteristic_nr = int(input("Please add the number corresponding to the wanted breed:"))
-    print(Fore.LIGHTGREEN_EX)
-    characteristic = breed_characteristics[characteristic_nr]
-    print(characteristic["value"])
+    end_of_program = False
+    while not end_of_program:
+        characteristic_nr = input("Please choose the characteristic by typing its corresponding number or type 'Exit' to end:")
+        if characteristic_nr.lower() == "exit":
+            end_of_program = True
+            print(Fore.RED + "End of program" + Style.RESET_ALL)
+        else:
+            characteristic_nr = int(characteristic_nr)
+            print(Fore.LIGHTGREEN_EX)
+            characteristic = breed_characteristics[characteristic_nr]
+            print(characteristic["value"])
