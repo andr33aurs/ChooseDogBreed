@@ -2,6 +2,7 @@ import time
 from prettytable import PrettyTable
 from colorama import Fore, Back, Style, init
 from breeds_dict import logo, breed_group
+import random
 
 
 def generate_prompt_table(field_names, groups):
@@ -34,8 +35,10 @@ def show_breeds_in_groups():
     # print(group["name"])
     subgroups = group["subgroups"]
 
-    # for breed_key, breed_value in subgroups.items():
-    #     print(f"{breed_key}: {breed_value['name']}")
+    for breed_key, breed_value in subgroups.items():
+        breed_name = breed_value['name']
+        breed_key = breed_key
+        # print(f"{breed_key}: {breed_value['name']}")
 
     print(Fore.MAGENTA)
     generate_prompt_table(["Breed Number", "Breed Name"], subgroups)
@@ -43,6 +46,7 @@ def show_breeds_in_groups():
 
     breed_nr = int(input("Please add the number corresponding to the wanted breed:"))
     breed = subgroups[breed_nr]
+    print(f"Excellent choice! In order to find out more about the chosen breed take a look at these characteristics:")
     breed_characteristics = breed["characteristics"]
 
     # for characteristic_key, characteristic_value in breed_characteristics.items():
@@ -55,12 +59,15 @@ def show_breeds_in_groups():
     end_of_program = False
     while not end_of_program:
         characteristic_nr = input("Please choose the characteristic by typing its corresponding number or type 'Exit' "
-                                  "to end:")
+                                  "to end the program:")
         if characteristic_nr.lower() == "exit":
             end_of_program = True
             print(Fore.RED + "End of program" + Style.RESET_ALL)
         else:
             characteristic_nr = int(characteristic_nr)
-            print(Fore.LIGHTGREEN_EX)
             characteristic = breed_characteristics[characteristic_nr]
-            print(characteristic["value"])
+            colors = [Fore.GREEN, Fore.MAGENTA, Fore.BLUE, Fore.CYAN]
+            color_choice = random.choice(colors)
+            print(color_choice + characteristic["value"] + Style.RESET_ALL)
+            print()
+
