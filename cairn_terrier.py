@@ -1,14 +1,17 @@
+
+
+
 def description():
     print("Short description:")
     return ("The Cairn terrier is a small-sized, sturdy dog with short legs. It has a flat head, a pronounced stop, "
-            "a strong muzzle and a black nose. \n"
-            "The eyes are wide apart, hazel and covered with bushy eyebrows. \n"
-            "The ears are small, triangular, slightly slating, pointy and erect. \n"
-            "The tail is short, pointy at the tip covered in hair and carried vertically. \n"
-            "The fur is double-layered, with soft and fluffy inner layer and an outer layer made of thick, rough, "
-            "not too short, straight hair. \n"
-            "The coat can have any colour except white and has darker shades on the ears, muzzle and the tip of the "
-            "tail.")
+                "a strong muzzle and a black nose. \n"
+                "The eyes are wide apart, hazel and covered with bushy eyebrows. \n"
+                "The ears are small, triangular, slightly slating, pointy and erect. \n"
+                "The tail is short, pointy at the tip covered in hair and carried vertically. \n"
+                "The fur is double-layered, with soft and fluffy inner layer and an outer layer made of thick, rough, "
+                "not too short, straight hair. \n"
+                "The coat can have any colour except white and has darker shades on the ears, muzzle and the tip of the "
+                "tail.")
 
 
 def personality():

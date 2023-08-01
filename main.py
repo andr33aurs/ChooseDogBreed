@@ -1,5 +1,5 @@
 import code_file
-import description2
+import breeds_dict
 code_file.show_breeds_in_groups()
 # code_file.characteristics()
 

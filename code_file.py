@@ -1,7 +1,7 @@
 import time
 from prettytable import PrettyTable
 from colorama import Fore, Back, Style, init
-from description2 import logo, breed_group
+from breeds_dict import logo, breed_group
 
 
 def generate_prompt_table(field_names, groups):
@@ -27,7 +27,7 @@ def show_breeds_in_groups():
     generate_prompt_table(["Group Number", "Group Name"], breed_group)
     print(Style.RESET_ALL)
     chosen_group_number = int(input("To learn more about each group, "
-                                    "please choose one of the above by typing the number of the group: \n"))
+                                    "please choose one of the above by typing the number of the group: "))
 
     group = breed_group[chosen_group_number]
     # print(group["name"])
