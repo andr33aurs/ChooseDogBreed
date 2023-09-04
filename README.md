@@ -5,7 +5,7 @@ Welcome to Dog Breed Choice! This Python project aims to assist users in choosin
 - Explore 10 different breed groups.
 - Choose from a variety of dog breeds within each group.
 - Discover detailed characteristics of selected breeds.
-- Colorful and user-friendly command-line interface using the `colorama` library.
+- Colorful and user-friendly command-line interface using the colorama library.
 
 - Upon running the program, you will be presented with a user-friendly interface to explore and select dog breeds.
 - Follow on-screen instructions to choose a breed group, specific breed, and explore their characteristics.
