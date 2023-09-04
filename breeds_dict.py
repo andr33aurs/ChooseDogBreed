@@ -65,36 +65,36 @@ breed_group = {
                     "name": "Boerboel",
                     "characteristics":
                         {
-                            1: {"name": "Description", "value": "Great dog!"},
-                            2: {"name": "Personality", "value": "Great dog!"},
-                            3: {"name": "Grooming", "value": "Great dog!"},
-                            4: {"name": "Living condition", "value": "Great dog!"},
-                            5: {"name": "Training", "value": "Great dog!"},
-                            6: {"name": "Usefulness", "value": "Great dog!"}
+                            1: {"name": "Description", "value": bc.boerbol.description},
+                            2: {"name": "Personality", "value": bc.boerbol.personality},
+                            3: {"name": "Grooming", "value": bc.boerbol.grooming},
+                            4: {"name": "Living condition", "value": bc.boerbol.living_conditions},
+                            5: {"name": "Training", "value": bc.boerbol.training},
+                            6: {"name": "Usefulness", "value": bc.boerbol.usefulness}
                         }
                     },
                 2: {
                     "name": "Affenpinscher",
                     "characteristics":
                         {
-                            1: {"name": "Description", "value": "Great dog!"},
-                            2: {"name": "Personality", "value": "Great dog!"},
-                            3: {"name": "Grooming", "value": "Great dog!"},
-                            4: {"name": "Living condition", "value": "Great dog!"},
-                            5: {"name": "Training", "value": "Great dog!"},
-                            6: {"name": "Usefulness", "value": "Great dog!"}
+                            1: {"name": "Description", "value": bc.affenpinscher.description},
+                            2: {"name": "Personality", "value": bc.affenpinscher.personality},
+                            3: {"name": "Grooming", "value": bc.affenpinscher.grooming},
+                            4: {"name": "Living condition", "value": bc.affenpinscher.living_conditions},
+                            5: {"name": "Training", "value": bc.affenpinscher.training},
+                            6: {"name": "Usefulness", "value": bc.affenpinscher.usefulness}
                         }
                     },
                 3: {
                     "name": "Cavalier King Charles Spaniel",
                     "characteristics":
                         {
-                            1: {"name": "Description", "value": "Great dog!"},
-                            2: {"name": "Personality", "value": "Great dog!"},
-                            3: {"name": "Grooming", "value": "Great dog!"},
-                            4: {"name": "Living condition", "value": "Great dog!"},
-                            5: {"name": "Training", "value": "Great dog!"},
-                            6: {"name": "Usefulness", "value": "Great dog!"}
+                            1: {"name": "Description", "value": bc.cavalier_king_charles_spaniel.description},
+                            2: {"name": "Personality", "value": bc.cavalier_king_charles_spaniel.personality},
+                            3: {"name": "Grooming", "value": bc.cavalier_king_charles_spaniel.grooming},
+                            4: {"name": "Living condition", "value": bc.cavalier_king_charles_spaniel.living_conditions},
+                            5: {"name": "Training", "value": bc.cavalier_king_charles_spaniel.training},
+                            6: {"name": "Usefulness", "value": bc.cavalier_king_charles_spaniel.usefulness}
                         }
                     }
             }
