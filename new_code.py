@@ -15,7 +15,7 @@ def generate_prompt_table(field_names, data):
 
 def display_breed_characteristics(breed_characteristics):
     while True:
-        print(Fore.CYAN)
+        print(Fore.YELLOW)
         generate_prompt_table(["Characteristic Number", "Characteristic"], breed_characteristics)
         print(Style.RESET_ALL)
 
@@ -39,7 +39,7 @@ def display_breed_characteristics(breed_characteristics):
 
 
 def main():
-    init(autoreset=True)
+
     print(Fore.MAGENTA + "Welcome to the Dog Breed Choice!")
     print(Style.RESET_ALL)
     time.sleep(2)
@@ -47,6 +47,7 @@ def main():
     time.sleep(2)
     print(Fore.MAGENTA + "You came here because you want to choose the best dog breed for your family.")
     time.sleep(2)
+    print(Style.RESET_ALL)
     print("But first, you need to know that dog breeds are divided into 10 classes as follows:")
     time.sleep(2)
 
